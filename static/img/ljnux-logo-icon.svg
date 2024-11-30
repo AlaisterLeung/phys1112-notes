@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024"
+   height="1024"
+   viewBox="0 0 272.933 272.933"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="jdev-logo-icon-simplified.svg"
+   inkscape:export-filename="jdev-logo-icon-simplified-bg.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#1d2021"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="0.5"
+     inkscape:cx="553"
+     inkscape:cy="548"
+     inkscape:window-width="1904"
+     inkscape:window-height="1028"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showborder="false"
+     inkscape:export-bgcolor="#1d2021ff" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;font-family:cunia;-inkscape-font-specification:cunia;opacity:0.6;fill:#ffff00;stroke-width:0.264583"
+       x="63.554775"
+       y="100.96748"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="stroke-width:0.264583"
+         x="63.554775"
+         y="100.96748" /></text>
+    <path
+       style="opacity:1;fill:#ffff00;stroke-width:0.264583"
+       d="m 133.1581,182.59248 6.6168,-4.93885"
+       id="path7" />
+    <g
+       id="text1"
+       style="font-size:56.4444px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro';letter-spacing:2.11667px;opacity:1;fill:#fbf1c7;fill-opacity:1;stroke-width:0.264583"
+       aria-label="&lt;j/&gt;"
+       transform="matrix(1.9737084,0,0,2.0335176,-130.90519,-89.938488)">
+      <path
+         style="text-align:center;text-anchor:middle;fill:#fbf1c7;fill-opacity:1"
+         d="m 88.998764,125.52675 v -4.4591 L 72.008999,109.60943 v -0.22578 L 88.998764,97.925441 V 93.466333 L 67.945002,107.74677 v 3.49955 z"
+         id="path5" />
+      <path
+         style="font-size:67.7333px;text-align:center;text-anchor:middle;fill:#fbf1c7;fill-opacity:1"
+         d="m 110.29526,142.93421 c 10.63413,0 13.8176,-5.75733 13.8176,-13.88533 V 95.317701 H 103.251 v 4.538131 h 15.30773 v 29.599448 c 0,5.62187 -1.76107,8.9408 -8.3312,8.9408 -2.50613,0 -5.14773,-0.67733 -7.5184,-1.8288 l -1.82879,4.13173 c 2.64159,1.28693 5.96053,2.2352 9.41492,2.2352 z m 10.43093,-54.525306 c 2.50613,0 4.4704,-1.693332 4.4704,-4.334931 0,-2.573866 -1.96427,-4.334931 -4.4704,-4.334931 -2.50613,0 -4.4704,1.761065 -4.4704,4.334931 0,2.641599 1.96427,4.334931 4.4704,4.334931 z"
+         id="path6" />
+      <path
+         style="text-align:center;text-anchor:middle;fill:#fbf1c7;fill-opacity:1"
+         d="m 145.49968,137.26719 h 4.17688 l 18.51376,-49.106631 h -4.17688 z m 36.43488,-11.74044 21.05376,-14.28043 v -3.49955 L 181.93456,93.466333 v 4.459108 l 16.98977,11.458209 v 0.22578 l -16.98977,11.45822 z"
+         id="path8" />
+    </g>
+  </g>
+</svg>
