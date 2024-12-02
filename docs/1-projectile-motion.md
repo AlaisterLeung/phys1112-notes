@@ -23,43 +23,22 @@ y &= (v_0 \sin\theta)t - \frac{1}{2}gt^2
 \end{align*}
 $$
 
-## Trajectory of the projectile
+## Parabolic trajectory of the projectile
 
 $$
 \begin{align*}
-y = x\tan\theta - x^2\frac{g}{2v_0^2\cos^2\theta}
-\end{align*}
-$$
-
-### Time taken $T$ to reach maximum height
-
-$$
-\begin{align*}
-T &= \frac{v_0\sin\theta}{g} \\
-t &= 2T
-\end{align*}
-$$
-
-### Maximum height $H$
-
-$$
-\begin{align*}
-H = \frac{v_0^2\sin^2\theta}{2g}
-\end{align*}
-$$
-
-### Horizontal distance $D$
-
-$$
-\begin{align*}
-D = v_x t =  \frac{2v_0^2\sin\theta\cos\theta}{g}
+\text{Parabolic trajectory:} && y &= x\tan\theta - x^2\frac{g}{2v_0^2\cos^2\theta} \\
+\text{Time to reach max height:} && T &= \frac{v_0\sin\theta}{g} \\
+\text{Total air time:} && t &= 2T \\
+\text{Maximum height:} && H &= \frac{v_0^2\sin^2\theta}{2g} \\
+\text{Horizontal distance:} && D &= v_x t =  \frac{2v_0^2\sin\theta\cos\theta}{g}
 \end{align*}
 $$
 
 ## Center of mass
 
--   $r_{cm}$: position vector of center of mass
--   $M$: total mass of all point masses
+- $r_{cm}$: position vector of center of mass
+- $M$: total mass of all point masses
 
 $$
 \begin{align*}

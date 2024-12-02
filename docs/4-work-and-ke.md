@@ -37,11 +37,11 @@ $$
 
 ## Motion on a curved path (swing)
 
--   $W_T$: work done by tension
--   $W_F$: work done by external push
--   $W_W$: work done by weight
--   $r$: radius of the curved path
--   $l$: displacement of the person
+- $W_T$: work done by tension
+- $W_F$: work done by external push
+- $W_W$: work done by weight
+- $r$: radius of the curved path
+- $l$: displacement of the person
 
 $$
 \begin{align*}

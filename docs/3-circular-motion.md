@@ -7,19 +7,19 @@ slug: /3-circular-motion
 
 ## Uniform circular motion
 
--   $T$: period
+- $T$: period
 
 $$
 \begin{align*}
 a_{rad} &= \frac{v^2}{r} \\
-T &= 2\pi\sqrt{\frac{r}{a_{rad}}}
+T &= \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r}{a_{rad}}}
 \end{align*}
 $$
 
 ## Object inside rotating cylinder
 
--   $n$: normal force (at the top of the cylinder) acting on the object
--   if $n \le 0$ (i.e. $v \le \sqrt{rg}$) then the object loses contact with the surface
+- $n$: normal force (at the top of the cylinder) acting on the object
+- if $n \le 0$ (i.e. $v \le \sqrt{rg}$) then the object loses contact with the surface
 
 $$
 \begin{align*}

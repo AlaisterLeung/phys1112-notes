@@ -34,7 +34,8 @@ const config: Config = {
                         ],
                     ],
                     sidebarPath: "./sidebars.ts",
-                    editUrl: "https://github.com/alaisterleung/phys1112-notes",
+                    editUrl:
+                        "https://github.com/AlaisterLeung/phys1112-notes/tree/main/",
                 },
                 blog: false,
             } satisfies Preset.Options,
@@ -49,6 +50,16 @@ const config: Config = {
                 "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
             crossorigin: "anonymous",
         },
+    ],
+
+    themes: [
+        [
+            "@easyops-cn/docusaurus-search-local",
+            {
+                indexBlog: false,
+                hashed: true,
+            },
+        ],
     ],
 
     themeConfig: {

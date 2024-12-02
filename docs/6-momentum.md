@@ -5,7 +5,7 @@ slug: /6-momentum
 
 # Momentum
 
--   SI unit: kg $\cdot$ m/s
+- SI unit: kg $\cdot$ m/s
 
 ## Linear momentum
 
@@ -25,14 +25,33 @@ $$
 \end{align*}
 $$
 
+## Angular Momentum
+
+- Directions of $\vec\omega$ and $\vec L$ are the same (**right-hand thumb rule**)
+
+$$
+\begin{align*}
+\vec L &= \vec r \times \vec p \\
+\frac{d\vec L}{dt} &= \vec r \times \vec F = \vec \tau \\
+L &= mvr\sin\theta \\
+L &= I\omega
+\end{align*}
+$$
+
+:::warning
+
+$L = I\omega$ is true only if $\vec L$ is along the rotation axis
+
+:::
+
 ## Collisions
 
-::: info
+:::info
 
--   **Total momentum** is conserved
--   **Elastic collision**: KE conserved, total energy conserved
--   **Inelastic collision**: KE decreases during collision
--   **Completely inelastic collision**: Objects stick together, KE decreases greatly during collision
+- **Total momentum** is conserved
+- **Elastic collision**: KE conserved, total energy conserved
+- **Inelastic collision**: KE decreases during collision
+- **Completely inelastic collision**: Objects stick together, KE decreases greatly during collision
 
 :::
 
@@ -44,7 +63,7 @@ v_{A0} - v_{B0} = -(v_{A1} - v_{B1})
 \end{align*}
 $$
 
-::: info[Special case: object B is initially at rest]
+:::info[Special case: object B is initially at rest]
 
 $$
 \begin{align*}

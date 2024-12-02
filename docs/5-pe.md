@@ -18,15 +18,22 @@ $$
 
 $$
 \begin{align*}
-U_g &= mgh
+\text{Close to Earth's surface:} && U_g &= mgh \\
+\text{Away from Earth's surface:} && U_g &= -\frac{GM_Em}{r}
 \end{align*}
 $$
+
+:::info
+
+Learn more about [gravitational PE](/8-gravitation#gravitational-pe-away-from-planet-surface)
+
+:::
 
 ## Elastic PE
 
 ### Hooke's law (spring restoring force)
 
--   $k$: force constant of spring
+- $k$: force constant of spring
 
 $$
 \begin{align*}
