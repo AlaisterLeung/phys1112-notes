@@ -18,6 +18,7 @@ This set of notes is prepared by [Alaister Leung](https://github.com/alaisterleu
 - [Potential energy](/5-pe)
 - [Momentum](/6-momentum)
   - [Angular momentum](/6-momentum#angular-momentum)
+  - [Collisions](/6-momentum#collisions)
 - [Moment of inertia](/7-moment-of-inertia)
   - [Torque](/7-moment-of-inertia#torque)
 - [Gravitation](/8-gravitation)

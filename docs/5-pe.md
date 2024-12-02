@@ -31,25 +31,25 @@ Learn more about [gravitational PE](/8-gravitation#gravitational-pe-away-from-pl
 
 ## Elastic PE
 
-### Hooke's law (spring restoring force)
-
+- Hooke's law
+- $F_s$: spring restoring force (negative: opposite to the displacement)
 - $k$: force constant of spring
 
 $$
 \begin{align*}
-F &= -kx \\
+F_s &= -kx \\
 U_e &= \frac{1}{2}kx^2
-\end{align*}
-$$
-
-### Horizontal glider connected to a spring
-
-$$
-\begin{align*}
-s = -\frac{\mu_k mg}{k} \pm \sqrt{\left(\frac{\mu_k mg}{k}\right)^2 + \frac{mv^2}{k}}
 \end{align*}
 $$
 
 ## PE-position graph
 
-TODO: add a diagram
+:::info
+
+- $x_1, x_3$ are points of **minima**: **stable** equilibrium
+- $x_2, x_4$ are points of **maxima**: **unstable** equilibrium
+
+:::
+
+![PE-position graph](/img/figures/pe-position-graph.png)
+![force-position graph](/img/figures/force-position-graph.png)

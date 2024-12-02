@@ -18,7 +18,7 @@ $$
 
 $$
 \begin{align*}
-\text{Change in energy:} && W &= \Delta E = \Delta K + \Delta U \\
+\text{Work-energy theorem:} && W &= \Delta E = \Delta K + \Delta U \\
 \text{Constant force:} && W &= \vec F \cdot \vec s = |F||s|\cos\theta \\
 \text{Varying force:} && W &= \int \vec F \cdot d \vec x \\
 \text{Torque:} && W &= \int \tau d\theta
@@ -35,7 +35,10 @@ $$
 \end{align*}
 $$
 
-## Motion on a curved path (swing)
+## Motion on a circular path
+
+<details>
+<summary>Example: person on a swing</summary>
 
 - $W_T$: work done by tension
 - $W_F$: work done by external push
@@ -52,4 +55,6 @@ W_{net} &= W_T + W_F + W_W = 0
 \end{align*}
 $$
 
-TODO: add a diagram
+![Motion on a curved path](/img/figures/motion-on-a-curved-path.png)
+
+</details>

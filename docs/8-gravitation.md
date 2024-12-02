@@ -61,6 +61,18 @@ $$
 \end{align*}
 $$
 
+:::info
+
+Schwarzschild radius $r_s$
+
+$$
+\begin{align*}
+c = \sqrt{\frac{2GM}{r_s}} &&\rightarrow&& r_s = \frac{2GM}{c^2}
+\end{align*}
+$$
+
+:::
+
 ### Satellite circular orbit
 
 $$
@@ -118,7 +130,7 @@ $$
 \end{align*}
 $$
 
-TODO: add a diagram
+![Elliptical orbit around the Sun](/img/figures/elliptical-orbit-around-the-sun.png)
 
 <details>
 <summary>Second law: constant sector velocity</summary>
@@ -144,13 +156,5 @@ $$
 $$
 \begin{align*}
 T = \frac{2\pi a^{3/2}}{GM_s}
-\end{align*}
-$$
-
-## Black holes
-
-$$
-\begin{align*}
-\text{Schwarzschild radius:} && r_s = \frac{2GM}{c^2}
 \end{align*}
 $$

@@ -27,8 +27,6 @@ $$
 
 ## Angular Momentum
 
-- Directions of $\vec\omega$ and $\vec L$ are the same (**right-hand thumb rule**)
-
 $$
 \begin{align*}
 \vec L &= \vec r \times \vec p \\
@@ -37,6 +35,12 @@ L &= mvr\sin\theta \\
 L &= I\omega
 \end{align*}
 $$
+
+:::info
+
+Directions of $\vec\omega$ and $\vec L$ are the same (**right-hand thumb rule**)
+
+:::
 
 :::warning
 
@@ -63,7 +67,9 @@ v_{A0} - v_{B0} = -(v_{A1} - v_{B1})
 \end{align*}
 $$
 
-:::info[Special case: object B is initially at rest]
+:::info
+
+Special case: object B is initially at rest
 
 $$
 \begin{align*}

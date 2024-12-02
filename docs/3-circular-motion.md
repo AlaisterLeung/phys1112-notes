@@ -7,12 +7,10 @@ slug: /3-circular-motion
 
 ## Uniform circular motion
 
-- $T$: period
-
 $$
 \begin{align*}
-a_{rad} &= \frac{v^2}{r} \\
-T &= \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r}{a_{rad}}}
+\text{Radial acceleration:} && a_{rad} &= \frac{v^2}{r} \\
+\text{Period:} && T &= \frac{2\pi r}{v} = 2\pi\sqrt{\frac{r}{a_{rad}}}
 \end{align*}
 $$
 
@@ -37,7 +35,9 @@ T &= 2\pi\sqrt{\frac{L\cos\theta}{g}}
 \end{align*}
 $$
 
-## Car rounding curve without skidding inwards
+![Conical pendulum](/img/figures/conical-pendulum.png)
+
+## Car rounding curve without skidding
 
 ### Flat curve
 
@@ -59,4 +59,4 @@ $$
 \end{align*}
 $$
 
-TODO: add a diagram
+![Car rounding banked curve](/img/figures/car-rounding-banked-curve.png)
