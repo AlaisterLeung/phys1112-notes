@@ -33,7 +33,7 @@ Learn more about [gravitational PE](/8-gravitation#gravitational-pe-away-from-pl
 
 - Hooke's law
 - $F_s$: spring restoring force (negative: opposite to the displacement)
-- $k$: force constant of spring
+- $k$: spring constant
 
 $$
 \begin{align*}

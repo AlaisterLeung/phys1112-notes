@@ -24,3 +24,4 @@ This set of notes is prepared by [Alaister Leung](https://github.com/alaisterleu
 - [Gravitation](/8-gravitation)
   - [Circular orbit](/8-gravitation#satellite-circular-orbit)
   - [Elliptical orbit](/8-gravitation#third-law-period-of-elliptical-orbit)
+- [Periodic motion](/9-periodic-motion)
