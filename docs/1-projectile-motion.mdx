@@ -3,9 +3,15 @@ sidebar_position: 1
 slug: /1-projectile-motion
 ---
 
+import Row from '@site/src/components/Row';
+import Column from '@site/src/components/Column';
+
 # Projectile motion
 
-## Horizontal motion (x-component)
+<Row>
+<Column>
+
+## Horizontal motion
 
 $$
 \begin{align*}
@@ -14,7 +20,10 @@ x &= (v_0 \cos\theta) t
 \end{align*}
 $$
 
-## Vertical motion (y-component)
+</Column>
+<Column>
+
+## Vertical motion
 
 $$
 \begin{align*}
@@ -22,6 +31,9 @@ v_y &= v_0 \sin\theta - gt \\
 y &= (v_0 \sin\theta)t - \frac{1}{2}gt^2
 \end{align*}
 $$
+
+</Column>
+</Row>
 
 ## Parabolic trajectory of the projectile
 
@@ -37,8 +49,8 @@ $$
 
 ## Center of mass
 
-- $r_{cm}$: position vector of center of mass
-- $M$: total mass of all point masses
+<Row>
+<Column size="7">
 
 $$
 \begin{align*}
@@ -47,10 +59,17 @@ $$
 \end{align*}
 $$
 
-![Center of mass in projectile motion](/img/figures/center-of-mass-in-projectile-motion.png)
+- $r_{cm}$: position vector of center of mass
+- $M$: total mass of all point masses
 
 :::info[Center of gravity]
 
 If $\vec g$ is the same at all points on a body, CM = CG and $\vec a_{cm} = \vec g$
 
 :::
+
+</Column>
+<Column size="5">
+<img src="/img/figures/center-of-mass-in-projectile-motion.png" alt="Center of mass in projectile motion" width="500" />
+</Column>
+</Row>

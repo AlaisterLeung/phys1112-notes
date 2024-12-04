@@ -1,0 +1,163 @@
+---
+sidebar_position: 9
+slug: /9-periodic-motion
+---
+
+import Row from '@site/src/components/Row';
+import Column from '@site/src/components/Column';
+import Table from '@site/src/components/Table';
+
+# Periodic motion
+
+## Simple harmonic motion (SHM)
+
+$$
+\begin{align*}
+\text{Angular frequency:} && \omega &= 2\pi f = \frac{2\pi}{T} \\
+\text{Linear frequency:} && f &= \frac{\omega}{2\pi} \\
+\text{Period:} && T &= \frac{1}{f} = \frac{2\pi}{\omega} \\
+\end{align*}
+$$
+
+### General solution
+
+<Row>
+<Column>
+
+$$
+\begin{align*}
+x &= A\cos(\omega t + \phi) \\
+v_x &= -\omega A\sin(\omega t + \phi) \\
+v_{max} &= \omega A \\
+a_x &= -\omega^2 A\cos(\omega t + \phi) \\
+a_{max} &= \omega^2 A \\
+A &= \sqrt{x_0^2 + \frac{v_0^2}{\omega^2}}
+\end{align*}
+$$
+
+</Column>
+<Column>
+
+:::info[Phase angle $\phi$]
+
+$$
+\begin{align*}
+\phi =
+\begin{cases}
+\tan^{-1}\left(-\dfrac{v_0}{wx_0}\right) & \text{if } x_0 > 0 \\
+\tan^{-1}\left(-\dfrac{v_0}{wx_0}\right)+\pi  & \text{if } x_0 < 0
+\end{cases}
+\end{align*}
+$$
+
+It tells the displacement of the particle $x_0$ at $t = 0$
+
+- $\phi = 0 \rightarrow x_0 = A$
+- $\phi = \pi \rightarrow x_0 = -A$
+- $\phi = \frac{\pi}{2} \rightarrow x_0 = 0$
+
+:::
+
+</Column>
+</Row>
+
+### Simple harmonic oscillators
+
+<Table>
+<thead>
+<tr>
+    <th>Block-spring</th>
+    <th>Angular oscillator</th>
+    <th>Simple pendulum</th>
+    <th>Physical pendulum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>$\omega = \sqrt{\dfrac{k}{m}}$</td>
+    <td>$\omega = \sqrt{\dfrac{\kappa}{I}}$</td>
+    <td>$\omega = \sqrt{\dfrac{g}{L}}$</td>
+    <td>$\omega = \sqrt{\dfrac{mgd}{I}}$</td>
+</tr>
+<tr>
+    <td>$k$: spring constant</td>
+    <td>$\kappa$: torsion constant</td>
+    <td>$L$: length of the pendulum</td>
+    <td>$d$: distance from the pivot to its CG</td>
+</tr>
+<tr>
+    <td><img src="/img/figures/block-spring.png" alt="Block spring" width="150" /></td>
+    <td><img src="/img/figures/angular-oscillator.png" alt="Angular oscillator" width="200" /></td>
+    <td><img src="/img/figures/simple-pendulum.png" alt="Simple pendulum" width="250" /></td>
+    <td><img src="/img/figures/physical-pendulum.png" alt="Physical pendulum" width="250" /></td>
+</tr>
+</tbody>
+</Table>
+
+:::info
+
+Conservation of energy in SHM
+
+$$
+\begin{align*}
+E &= K + U = \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2
+\end{align*}
+$$
+
+:::
+
+## Damped harmonic oscillator
+
+<Row>
+<Column size="7">
+
+- $b$: damping constant
+- $\omega'$: damped angular frequency
+
+$$
+\begin{align*}
+x &= Ae^{-\left(\frac{b}{2m}\right)t}\cos(\omega't+\phi) \\
+\omega' &= \sqrt{\frac{k}{m} - \frac{b^2}{4m^2}}
+\end{align*}
+$$
+
+:::info
+
+- $b < 2\sqrt{km}$ : under damping (oscillation dies off)
+- $b = 2\sqrt{km}$ : critical damping (no oscillation, return to equilibrium in shortest time)
+- $b > 2\sqrt{km}$ : over damping (no oscillation)
+
+:::
+
+</Column>
+<Column size="5">
+<img src="/img/figures/damped-harmonic-oscillator.png" alt="Damped harmonic oscillator" width="350" />
+</Column>
+</Row>
+
+## Forced harmonic oscillation
+
+<Row>
+<Column size="7">
+
+- $\omega_d$: driving angular frequency
+
+$$
+\begin{align*}
+A = \dfrac{F_{max}}{\sqrt{(k-m\omega_d^2)^2 + b^2\omega_d^2}}
+\end{align*}
+$$
+
+:::info[Resonance]
+
+- When $\omega_d \rightarrow \omega$ (natural angular frequency of an undamped oscillator), $A$ reaches maximum (resonance peak)
+- Smaller $b$ (lighter damping) gives a sharper peak
+- If $b \ge 2\sqrt{km}$ , the peak disappears completely
+
+:::
+
+</Column>
+<Column size="5">
+<img src="/img/figures/forced-harmonic-oscillation.png" alt="Forced harmonic oscillation" width="400" />
+</Column>
+</Row>

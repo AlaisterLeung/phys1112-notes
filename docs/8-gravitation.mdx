@@ -3,17 +3,20 @@ sidebar_position: 8
 slug: /8-gravitation
 ---
 
+import Row from '@site/src/components/Row';
+import Column from '@site/src/components/Column';
+
 # Gravitation
 
 ## Newton's law of universal gravitation
-
-- $G = 6.67 \times 10^{-11}\space\text{N}\cdot\text{m}^2/\text{kg}^2$ (**gravitational constant**)
 
 $$
 \begin{align*}
 F_g = \frac{Gm_1m_2}{r^2} && \text{where } r > r_1 \text{ and } r > r_2
 \end{align*}
 $$
+
+- **Gravitational constant**: $G = 6.67 \times 10^{-11}$ N$\cdot$m$^2$/kg$^2$
 
 :::info
 
@@ -24,9 +27,6 @@ $$
 
 ### Weight
 
-- $M$: mass of the planet
-- $R$: radius of the planet
-
 $$
 \begin{align*}
 \text{Acceleration due to gravity:} &&  g_0 &= \frac{GM}{R^2} \\
@@ -34,6 +34,9 @@ $$
 \text{Apparent weight at the equator:} && W &= mg_0 - \frac{mv^2}{R} \\
 \end{align*}
 $$
+
+- $M$: mass of the planet
+- $R$: radius of the planet
 
 ### Gravitational PE away from planet surface
 
@@ -115,10 +118,8 @@ $$
 
 ### First law: elliptical orbit around the Sun
 
-- $a$: length of semi-major axis
-- $b$: length of semi-minor axis
-- Aphelion is the farthest point from Sun
-- Perihelion is the closest point to Sun
+<Row>
+<Column size="7">
 
 $$
 \begin{align*}
@@ -130,13 +131,19 @@ $$
 \end{align*}
 $$
 
-![Elliptical orbit around the Sun](/img/figures/elliptical-orbit-around-the-sun.png)
+- $a$: length of semi-major axis
+- $b$: length of semi-minor axis
+- Aphelion is the farthest point from Sun
+- Perihelion is the closest point to Sun
+
+</Column>
+<Column size="5">
+<img src="/img/figures/elliptical-orbit-around-the-sun.png" alt="Elliptical orbit around the Sun" width="350" />
+</Column>
+</Row>
 
 <details>
 <summary>Second law: constant sector velocity</summary>
-
-- $A$: area swept by the planet in time $t$
-- $L$: angular momentum of the planet which is **constant**, ignoring precession
 
 $$
 \begin{align*}
@@ -146,15 +153,18 @@ $$
 \end{align*}
 $$
 
+- $A$: area swept by the planet in time $t$
+- $L$: angular momentum of the planet which is **constant**, ignoring precession
+
 </details>
 
 ### Third law: period of elliptical orbit
-
-- $a$: length of semi-major axis
-- $Ms$: mass of Sun
 
 $$
 \begin{align*}
 T = \frac{2\pi a^{3/2}}{GM_s}
 \end{align*}
 $$
+
+- $a$: length of semi-major axis
+- $M_s$: mass of Sun

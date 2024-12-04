@@ -1,0 +1,41 @@
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.875rem;
+}
+
+h6 {
+    font-size: 0.85rem;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    min-width: 200px;
+    overflow: visible;
+    text-align: center;
+}

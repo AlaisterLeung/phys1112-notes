@@ -3,6 +3,9 @@ sidebar_position: 5
 slug: /5-pe
 ---
 
+import Row from '@site/src/components/Row';
+import Column from '@site/src/components/Column';
+
 # Potential energy
 
 ## Conservative force
@@ -29,11 +32,7 @@ Learn more about [gravitational PE](/8-gravitation#gravitational-pe-away-from-pl
 
 :::
 
-## Elastic PE
-
-- Hooke's law
-- $F_s$: spring restoring force (negative: opposite to the displacement)
-- $k$: spring constant
+## Elastic PE (Hooke's law)
 
 $$
 \begin{align*}
@@ -41,6 +40,9 @@ F_s &= -kx \\
 U_e &= \frac{1}{2}kx^2
 \end{align*}
 $$
+
+- $F_s$: spring restoring force (negative: opposite to the displacement)
+- $k$: spring constant
 
 ## PE-position graph
 
@@ -51,5 +53,11 @@ $$
 
 :::
 
-![PE-position graph](/img/figures/pe-position-graph.png)
-![force-position graph](/img/figures/force-position-graph.png)
+<Row>
+<Column>
+<img src="/img/figures/pe-position-graph.png" alt="PE-position graph" />
+</Column>
+<Column>
+<img src="/img/figures/force-position-graph.png" alt="force-position graph" />
+</Column>
+</Row>

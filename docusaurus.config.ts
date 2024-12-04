@@ -34,10 +34,14 @@ const config: Config = {
                         ],
                     ],
                     sidebarPath: "./sidebars.ts",
+                    breadcrumbs: false,
                     editUrl:
                         "https://github.com/AlaisterLeung/phys1112-notes/tree/main/",
                 },
                 blog: false,
+                theme: {
+                    customCss: ["./src/css/styles.module.css"],
+                },
             } satisfies Preset.Options,
         ],
     ],
@@ -79,6 +83,11 @@ const config: Config = {
                     position: "right",
                 },
             ],
+        },
+        docs: {
+            sidebar: {
+                hideable: true,
+            },
         },
         footer: {
             style: "dark",

@@ -1,0 +1,217 @@
+---
+sidebar_position: 10
+slug: /10-wave-and-sound
+---
+
+import Row from '@site/src/components/Row';
+import Column from '@site/src/components/Column';
+import Table from '@site/src/components/Table';
+
+# Wave and sound
+
+## Transverse waves
+
+- Particle moves up and down, perpendicular to the motion of the wave
+- Crest: $y = A$ and trough: $y = -A$
+
+$$
+\begin{align*}
+\text{Wave number:} && k &= \frac{2\pi}{\lambda} \\
+\text{Wave speed:} && v &= f\lambda = \frac{\omega}{k} \\
+\text{Frequency:} && f &= \frac{\omega}{2\pi} \\
+\text{Period:} && T &= \frac{1}{f}
+\end{align*}
+$$
+
+:::info
+
+**Wave speed on a string**: $v = \large\sqrt{\frac{T}{\mu}}$
+
+- $T$: equilibrium tension of the string
+- $\mu$: mass per unit length of the string
+
+:::
+
+### Wave equation for transverse waves
+
+$$
+\begin{align*}
+y(x,t) &= A\cos(kx-\omega t) && \text{traveling +ve x-direction} \\
+y(x,t) &= A\cos(kx+\omega t) && \text{traveling −ve x-direction} \\
+\end{align*}
+$$
+
+:::info[Superposition]
+
+If $y_1$ and $y_2$ are incoming wave and reflected wave, their resultant wave $y = y_1 + y_2$
+
+:::
+
+$$
+\begin{align*}
+v_y(x,t) &= \omega A\sin(kx-\omega t) \\
+v_{max} &= \omega A \\
+a_y(x,t) &= -\omega^2 A\cos(kx-\omega t) \\
+a_{max} &= \omega^2 A
+\end{align*}
+$$
+
+:::warning
+
+$v_y$ is the speed of a particle, **not the wave speed**.
+
+:::
+
+## Energy in wave motion
+
+- $P$: power of the wave
+- $I$: intensity of the wave (unit: $W/m^2$)
+
+$$
+\begin{align*}
+P(x,t) &= \sqrt{\mu T}\omega^2A^2sin^2(kx-\omega t) &\ge 0 \\
+P_{max} &= \sqrt{\mu T}\omega^2A^2 \\
+P_{av} &= \frac{1}{2}P_{max} \\
+I &= \frac{P}{4\pi r^2}
+\end{align*}
+$$
+
+## Reflection of transverse waves
+
+<Table>
+<thead>
+<tr>
+    <th>Fixed boundary</th>
+    <th>Open boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td><img src="/img/figures/reflection-of-wave-fixed-boundary.png" alt="Fixed boundary" height="400" /></td>
+    <td><img src="/img/figures/reflection-of-wave-open-boundary.png" alt="Open boundary" height="400" /></td>
+</tr>
+</tbody>
+</Table>
+
+## Standing waves
+
+- **Node**: zero amplitude, **destructive interference**
+- **Antinode**: maximum amplitude, **constructive interference**
+
+<Row>
+<Column>
+
+### Standing waves for fixed boundary condition
+
+$$
+\begin{align*}
+y(x,t) &= 2A\sin(kx)\sin(\omega t)
+\end{align*}
+$$
+
+- Nodes at $x = 0,\large\frac{\lambda}{2}\normalsize,\lambda,\large\frac{3\lambda}{2}\normalsize,...$
+- Antinodes at $x = \large\frac{\lambda}{4}\normalsize,\large\frac{3\lambda}{4}\normalsize,\large\frac{5\lambda}{4}\normalsize,...$
+
+</Column>
+<Column>
+
+### Standing waves for open boundary condition
+
+$$
+\begin{align*}
+y(x,t) &= 2A\cos(kx)\cos(\omega t)
+\end{align*}
+$$
+
+- Nodes at $x = \large\frac{\lambda}{4}\normalsize,\large\frac{3\lambda}{4}\normalsize,\large\frac{5\lambda}{4}\normalsize,...$
+- Antinodes at $x = 0,\large\frac{\lambda}{2}\normalsize,\lambda,\large\frac{3\lambda}{2}\normalsize,...$
+
+</Column>
+</Row>
+
+### Harmonics
+
+<Row>
+<Column size="7">
+
+$$
+\begin{align*}
+\text{Length of the string:} && L &= \frac{n\lambda}{2} \\
+\text{Fundamental frequency:} && f_1 &= \frac{v}{2L} && (n=1) \\
+\text{Second harmonic:} && f_2 &= 2f_1 && (n=2) \\
+\text{n-th harmonic:} && f_n &= nf_1
+\end{align*}
+$$
+
+</Column>
+<Column size="5">
+<img src="/img/figures/harmonics.png" alt="Harmonics" width="300" />
+</Column>
+</Row>
+
+## Sound waves
+
+### Beats
+
+<Row>
+<Column>
+
+**Superposition** of two sound waves
+
+$$
+\begin{align*}
+f_{beat} &= |f_1-f_2| \\
+T_{beat} &= \frac{1}{|f_1-f_2|}
+\end{align*}
+$$
+
+</Column>
+<Column>
+<img src="/img/figures/beats.png" alt="Beats" width="400" />
+</Column>
+</Row>
+
+### Doppler effect of sound
+
+<Row>
+<Column>
+
+$$
+\begin{align*}
+f_L = \left(\frac{v+v_L}{v+v_S}\right)f_S
+\end{align*}
+$$
+
+- $f_L$: frequency at the listener
+- $f_S$: frequency of the source
+- $v_L$: velocity of the listener
+- $v_S$: velocity of the source
+
+</Column>
+<Column>
+
+:::warning
+
+For $v_L$ and $v_S$: direction pointing **from listener to source** is **positive**
+
+e.g. If the listener is approaching the source, while the source is approaching the listener:
+
+$v_L > 0 \text{ and } v_S < 0 \Rightarrow f_L > f_S$
+
+:::
+
+</Column>
+</Row>
+
+<details>
+<summary>Doppler effect of light *(out of syllabus?)*</summary>
+
+$$
+\begin{align*}
+f_R = \sqrt{\frac{c-v}{c+v}}f_S
+\end{align*}
+$$
+
+where $v$ is the relative velocity between the receiver and the source
+
+</details>
