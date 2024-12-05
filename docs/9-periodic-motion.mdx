@@ -6,6 +6,8 @@ slug: /9-periodic-motion
 import Row from '@site/src/components/Row';
 import Column from '@site/src/components/Column';
 import Table from '@site/src/components/Table';
+import Th from '@site/src/components/9/Th';
+import Td from '@site/src/components/9/Td';
 
 # Periodic motion
 
@@ -13,11 +15,14 @@ import Table from '@site/src/components/Table';
 
 $$
 \begin{align*}
-\text{Angular frequency:} && \omega &= 2\pi f = \frac{2\pi}{T} \\
-\text{Linear frequency:} && f &= \frac{\omega}{2\pi} \\
-\text{Period:} && T &= \frac{1}{f} = \frac{2\pi}{\omega} \\
+\omega &= 2\pi f = \frac{2\pi}{T} \\
+f &= \frac{\omega}{2\pi} \\
+T &= \frac{1}{f} = \frac{2\pi}{\omega}
 \end{align*}
 $$
+
+- $\omega$: angular frequency (rad/s)
+- $f$: frequency (Hz)
 
 ### General solution
 
@@ -40,14 +45,14 @@ $$
 
 :::info[Phase angle $\phi$]
 
+If $x_0>0$
 $$
-\begin{align*}
-\phi =
-\begin{cases}
-\tan^{-1}\left(-\dfrac{v_0}{wx_0}\right) & \text{if } x_0 > 0 \\
-\tan^{-1}\left(-\dfrac{v_0}{wx_0}\right)+\pi  & \text{if } x_0 < 0
-\end{cases}
-\end{align*}
+\phi = \tan^{-1}\left(-\frac{v_0}{wx_0}\right)
+$$
+
+If $x_0<0$
+$$
+\phi = \tan^{-1}\left(-\frac{v_0}{wx_0}\right)+\pi
 $$
 
 It tells the displacement of the particle $x_0$ at $t = 0$
@@ -66,45 +71,42 @@ It tells the displacement of the particle $x_0$ at $t = 0$
 <Table>
 <thead>
 <tr>
-    <th>Block-spring</th>
-    <th>Angular oscillator</th>
-    <th>Simple pendulum</th>
-    <th>Physical pendulum</th>
+    <Th>Block-spring</Th>
+    <Th>Angular oscillator</Th>
+    <Th>Simple pendulum</Th>
+    <Th>Physical pendulum</Th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td>$\omega = \sqrt{\dfrac{k}{m}}$</td>
-    <td>$\omega = \sqrt{\dfrac{\kappa}{I}}$</td>
-    <td>$\omega = \sqrt{\dfrac{g}{L}}$</td>
-    <td>$\omega = \sqrt{\dfrac{mgd}{I}}$</td>
+    <Td>$\omega = \sqrt{\dfrac{k}{m}}$</Td>
+    <Td>$\omega = \sqrt{\dfrac{\kappa}{I}}$</Td>
+    <Td>$\omega = \sqrt{\dfrac{g}{L}}$</Td>
+    <Td>$\omega = \sqrt{\dfrac{mgd}{I}}$</Td>
 </tr>
 <tr>
-    <td>$k$: spring constant</td>
-    <td>$\kappa$: torsion constant</td>
-    <td>$L$: length of the pendulum</td>
-    <td>$d$: distance from the pivot to its CG</td>
+    <Td>$k$: spring constant</Td>
+    <Td>$\kappa$: torsion constant</Td>
+    <Td>$L$: length of the pendulum</Td>
+    <Td>$d$: distance from the pivot to its CG</Td>
 </tr>
 <tr>
-    <td><img src="/img/figures/block-spring.png" alt="Block spring" width="150" /></td>
-    <td><img src="/img/figures/angular-oscillator.png" alt="Angular oscillator" width="200" /></td>
-    <td><img src="/img/figures/simple-pendulum.png" alt="Simple pendulum" width="250" /></td>
-    <td><img src="/img/figures/physical-pendulum.png" alt="Physical pendulum" width="250" /></td>
+    <Td><img src="/img/figures/block-spring.png" alt="Block spring" width="150" /></Td>
+    <Td><img src="/img/figures/angular-oscillator.png" alt="Angular oscillator" width="200" /></Td>
+    <Td><img src="/img/figures/simple-pendulum.png" alt="Simple pendulum" width="250" /></Td>
+    <Td><img src="/img/figures/physical-pendulum.png" alt="Physical pendulum" width="250" /></Td>
 </tr>
 </tbody>
 </Table>
 
-:::info
-
-Conservation of energy in SHM
+### Conservation of energy in SHM
 
 $$
 \begin{align*}
-E &= K + U = \frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2
+E &= K + U = \frac{1}{2}mv^2 + \frac{1}{2}kx^2 \\
+E &= U_{max} = \frac{1}{2}kA^2
 \end{align*}
 $$
-
-:::
 
 ## Damped harmonic oscillator
 

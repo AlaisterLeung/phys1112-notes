@@ -40,7 +40,7 @@ const config: Config = {
                 },
                 blog: false,
                 theme: {
-                    customCss: ["./src/css/styles.module.css"],
+                    customCss: ["./src/css/styles.css"],
                 },
             } satisfies Preset.Options,
         ],
@@ -83,6 +83,7 @@ const config: Config = {
                     position: "right",
                 },
             ],
+            hideOnScroll: true,
         },
         docs: {
             sidebar: {
@@ -92,6 +93,9 @@ const config: Config = {
         footer: {
             style: "dark",
             copyright: `Copyright © ${new Date().getFullYear()} ljnux. Built with Docusaurus.`,
+        },
+        tableOfContents: {
+            maxHeadingLevel: 4,
         },
         prism: {
             theme: prismThemes.github,

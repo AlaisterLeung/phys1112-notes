@@ -1,0 +1,111 @@
+---
+sidebar_position: 12
+slug: /12-thermodynamics
+---
+
+import Table from '@site/src/components/Table';
+import Th from '@site/src/components/12/Th';
+import Td from '@site/src/components/12/Td';
+
+# Thermodynamics
+
+<details>
+<summary>Basic info (click to expand)</summary>
+
+Number of moles $n = \frac{m}{M} = \frac{N}{N_A}$
+- $M$: molar mass (kg/mol), mass of 1 mole of the substance
+- $N$: number of particles/molecules
+- $N_A = 6.02\times10^{23}$ mol$^{-1}$ : **Avogadro constant**
+
+Pressure $= \frac{\text{Force}}{\text{Area}}$
+
+Density $= \frac{\text{Mass}}{\text{Volume}}$
+
+Litter to cubic meter: $1$L = $1\times10^{-3}$ m$^3$
+
+</details>
+
+## Summary
+
+<Table>
+<thead>
+<tr>
+    <Th></Th>
+    <Th>Change in internal energy</Th>
+    <Th>Heat transfer</Th>
+    <Th>Work done</Th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <Td></Td>
+    <Td>$\Delta U = \frac{f}{2}nRT$</Td>
+    <Td>$Q_{in} = nC\Delta T$</Td>
+    <Td>$W_{by} = p\Delta V$</Td>
+</tr>
+<tr>
+    <Td>**Isothermal** ($\Delta T = 0$)</Td>
+    <Td>$\Delta U = 0$</Td>
+    <Td>$Q_{in} = W_{by}$</Td>
+    <Td>$W_{by} = nRT\ln\left(\frac{V_1}{V_0}\right)$</Td>
+</tr>
+<tr>
+    <Td>**Isochoric** ($\Delta V = 0$)</Td>
+    <Td>$\Delta U = Q_{in} = \frac{f}{2}nR\Delta T$</Td>
+    <Td>$Q_{in} = nC_v\Delta T$</Td>
+    <Td>$W_{by} = 0$</Td>
+</tr>
+<tr>
+    <Td>**Isobaric** ($\Delta p = 0$)</Td>
+    <Td>$\Delta U = \frac{f}{2}p\Delta V = \frac{f}{2}nR\Delta T$</Td>
+    <Td>$Q_{in} = nC_p\Delta T$</Td>
+    <Td>$W_{by} = p\Delta V = nR\Delta T$</Td>
+</tr>
+<tr>
+    <Td>**Adiabatic** ($Q_{in} = 0$)</Td>
+    <Td>$\Delta U = -W_{by}$</Td>
+    <Td>$Q_{in} = 0$</Td>
+    <Td>$W_{by} = \frac{1}{\gamma-1}(p_0V_0 - p_1V_1)$</Td>
+</tr>
+</tbody>
+</Table>
+
+## Ideal gas law
+
+$$
+\begin{align*}
+pV = nRT = NkT
+\end{align*}
+$$
+
+- $R = 8.314$ J/mol$\cdot$K : **universal gas constant**
+- $k = 1.381\times10^{-23}$ J/K : **Boltzmann constant**
+
+## KE of ideal gas
+
+Total translational KE:
+
+$$
+K_{tr} = \frac{3}{2}nRT = \frac{3}{2}NkT
+$$
+
+Root-mean-square speed:
+
+$$
+v_{rms} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3kT}{m}}
+$$
+
+## Internal energy of gas system
+
+:::warning[work in progress...]
+
+Update coming soon!
+
+:::
+
+**First law of thermodynamics**:
+$$
+\Delta U = Q_{in} - W_{by}
+$$
+
+TODO: add a p-V diagram

@@ -11,47 +11,72 @@ import Column from '@site/src/components/Column';
 ## Newton's law of universal gravitation
 
 $$
+F_{grav} = \frac{Gm_1m_2}{r^2}
+$$
+
+- where $r>r_1$ and $r>r_2$ (i.e. two bodies **outside** of each other)
+- $G = 6.67\times10^{-11}$ N$\cdot$m$^2$/kg$^2$ : **gravitational constant**
+
+### Gravitational PE (away from planet surface)
+
+$$
+U_{grav} = -\frac{GMm}{r}
+$$
+
+- If $r = \infty$, $U_{grav} = 0$
+- As $U_{grav} < 0$, $U_{grav}$ decreases (more negative) as $r$ decreases
+
+### Shell theorem
+
+<Row>
+<Column>
+
+#### Outside a hollow sphere ($r \ge R$)
+
+$$
 \begin{align*}
-F_g = \frac{Gm_1m_2}{r^2} && \text{where } r > r_1 \text{ and } r > r_2
+F_{shell} &= \frac{GMm}{r^2} \\
+U_{shell} &= -\frac{GMm}{r}
 \end{align*}
 $$
 
-- **Gravitational constant**: $G = 6.67 \times 10^{-11}$ N$\cdot$m$^2$/kg$^2$
+</Column>
+<Column>
 
-:::info
+#### Inside a hollow sphere ($r < R$)
 
-- It only holds true if the spherically symmetric bodies lie **outside** of each other. See [shell theorem](#shell-theorem)
-- Gravitational forces form an action-reaction pair
+$$
+\begin{align*}
+F_{shell} &= 0 \\
+U_{shell} &= -\frac{GMm}{R}
+\end{align*}
+$$
 
-:::
+</Column>
+</Row>
+
+- $R$: radius of hollow sphere
+- $M$: mass of hollow sphere
 
 ### Weight
 
+Acceleration due to gravity:
 $$
-\begin{align*}
-\text{Acceleration due to gravity:} &&  g_0 &= \frac{GM}{R^2} \\
-\text{True weight at the poles:} && W_0 &= mg_0 \\
-\text{Apparent weight at the equator:} && W &= mg_0 - \frac{mv^2}{R} \\
-\end{align*}
+g_0 = \frac{GM}{R^2}
+$$
+
+True weight at the poles:
+$$
+w_0 = mg_0
+$$
+
+Apparent weight at the equator:
+$$
+w = mg_0 - \frac{mv^2}{R}
 $$
 
 - $M$: mass of the planet
 - $R$: radius of the planet
-
-### Gravitational PE away from planet surface
-
-$$
-\begin{align*}
-U &= -\frac{GMm}{r}
-\end{align*}
-$$
-
-:::info
-
-- If $r = \infty$, $U = 0$
-- As $U < 0$, $U$ decreases (more negative) as $r$ decreases
-
-:::
 
 ### (Minimum) escape speed
 
@@ -59,22 +84,19 @@ If a projectile is launched vertically, ignoring air resistance
 
 $$
 \begin{align*}
-\frac{1}{2}mv^2 + \left(-\frac{GMm}{R}\right) &= 0 + 0 && (\text{since }v \rightarrow 0 \text{ and } r \rightarrow \infty) \\
+\text{When }v&\rightarrow0\text{ and }r\rightarrow\infty \\
+\frac{1}{2}mv^2 &+ \left(-\frac{GMm}{R}\right) = 0 + 0\\
 \therefore v_{esc} &= \sqrt{\frac{2GM}{R}}
 \end{align*}
 $$
 
-:::info
-
-Schwarzschild radius $r_s$
+**Schwarzschild radius** $r_s$ :
 
 $$
 \begin{align*}
 c = \sqrt{\frac{2GM}{r_s}} &&\rightarrow&& r_s = \frac{2GM}{c^2}
 \end{align*}
 $$
-
-:::
 
 ### Satellite circular orbit
 
@@ -87,41 +109,9 @@ E_{orbit} &= \frac{U}{2} = -\frac{GMm}{2r}
 \end{align*}
 $$
 
-:::info
-
-For a larger orbit, total energy and potential energy are larger (less negative), but kinetic energy is smaller
-
-:::
-
-### Shell theorem
-
-<Row>
-<Column>
-
-#### Body lies inside Earth (uniform density)
-
-$$
-\begin{align*}
-F_g = \frac{GM_Em}{R_E^3}r && \text{where } r < R_E
-\end{align*}
-$$
-
-</Column>
-<Column>
-
-#### Body lies inside a hollow sphere
-
-$$
-\begin{align*}
-U &= -\frac{GMm}{R} \\
-F_g &= 0
-\end{align*}
-$$
-
-- $R$: radius of hollow sphere of mass $M$
-
-</Column>
-</Row>
+For a larger orbit,
+- Total energy and PE are larger (less negative)
+- But KE is smaller
 
 ## Kepler's laws of planetary motion
 

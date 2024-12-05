@@ -1,3 +1,7 @@
+:root {
+    --ifm-footer-padding-vertical: 16px;
+}
+
 h1 {
     font-size: 2rem;
 }
@@ -35,7 +39,18 @@ table {
 
 th,
 td {
-    min-width: 200px;
     overflow: visible;
+}
+
+.table-item-9 {
+    width: 300px;
+    max-width: 300px;
+    min-width: 200px;
     text-align: center;
+}
+
+.table-item-12 {
+    width: 250px;
+    max-width: 250px;
+    min-width: 180px;
 }

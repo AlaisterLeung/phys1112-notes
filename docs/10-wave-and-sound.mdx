@@ -16,12 +16,14 @@ import Table from '@site/src/components/Table';
 
 $$
 \begin{align*}
-\text{Wave number:} && k &= \frac{2\pi}{\lambda} \\
-\text{Wave speed:} && v &= f\lambda = \frac{\omega}{k} \\
-\text{Frequency:} && f &= \frac{\omega}{2\pi} \\
-\text{Period:} && T &= \frac{1}{f}
+k &= \frac{2\pi}{\lambda} \\
+v &= f\lambda = \frac{\omega}{k} \\
+f &= \frac{\omega}{2\pi} \\
+T &= \frac{1}{f}
 \end{align*}
 $$
+
+- $k$: wave number (m$^{-1}$)
 
 :::info
 
@@ -34,11 +36,14 @@ $$
 
 ### Wave equation for transverse waves
 
+Wave traveling +ve x-direction:
 $$
-\begin{align*}
-y(x,t) &= A\cos(kx-\omega t) && \text{traveling +ve x-direction} \\
-y(x,t) &= A\cos(kx+\omega t) && \text{traveling −ve x-direction} \\
-\end{align*}
+y(x,t) = A\cos(kx-\omega t)
+$$
+
+Wave traveling −ve x-direction:
+$$
+y(x,t) = A\cos(kx+\omega t)
 $$
 
 :::info[Superposition]
@@ -65,11 +70,11 @@ $v_y$ is the speed of a particle, **not the wave speed**.
 ## Energy in wave motion
 
 - $P$: power of the wave
-- $I$: intensity of the wave (unit: $W/m^2$)
+- $I$: intensity of the wave (W/m$^2$)
 
 $$
 \begin{align*}
-P(x,t) &= \sqrt{\mu T}\omega^2A^2sin^2(kx-\omega t) &\ge 0 \\
+P(x,t) &= \sqrt{\mu T}\omega^2A^2sin^2(kx-\omega t) \\
 P_{max} &= \sqrt{\mu T}\omega^2A^2 \\
 P_{av} &= \frac{1}{2}P_{max} \\
 I &= \frac{P}{4\pi r^2}
@@ -134,14 +139,22 @@ $$
 <Row>
 <Column size="7">
 
+Fundamental frequency ($n = 1$):
 $$
-\begin{align*}
-\text{Length of the string:} && L &= \frac{n\lambda}{2} \\
-\text{Fundamental frequency:} && f_1 &= \frac{v}{2L} && (n=1) \\
-\text{Second harmonic:} && f_2 &= 2f_1 && (n=2) \\
-\text{n-th harmonic:} && f_n &= nf_1
-\end{align*}
+f_1 = \frac{v}{2L}
 $$
+
+Second harmonic ($n = 2$):
+$$
+f_2 = 2f_1
+$$
+
+n-th harmonic:
+$$
+f_n = nf_1
+$$
+
+- Length of the string $L = \frac{n\lambda}{2}$
 
 </Column>
 <Column size="5">

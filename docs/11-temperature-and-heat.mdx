@@ -1,0 +1,166 @@
+---
+sidebar_position: 11
+slug: /11-temperature-and-heat
+---
+
+import Row from '@site/src/components/Row';
+import Column from '@site/src/components/Column';
+
+# Temperature and heat
+
+## Units of temperature
+
+<Row>
+<Column size="4">
+
+$$
+\begin{align*}
+T_F &= \frac{9}{5}T_C + 32 \\
+T_K &= T_C + 273.15
+\end{align*}
+$$
+
+</Column>
+<Column size="8">
+
+:::info
+
+- **Triple point of water**: solid ice, liquid water and water vapour coexist at 273.16 K (= 0.01 &deg;C) and a vapour pressure of 612 Pa (about 0.006 atm)
+- **Absolute zero**: 0 K (= -273.15 &deg;C)
+
+:::
+
+</Column>
+</Row>
+
+## Thermal expansion
+
+<Row>
+<Column>
+
+### Linear expansion
+
+$$
+\begin{align*}
+\Delta L = L_0\alpha\Delta T
+\end{align*}
+$$
+
+- $\alpha$: coefficient of linear expansion (K$^{-1}$)
+- When an object under goes thermal expansion, any holes in the object expand as well.
+
+</Column>
+<Column>
+
+### Volume expansion
+
+$$
+\begin{align*}
+\Delta V
+&= V_0\beta\Delta T \\
+&= 3V_0\alpha\Delta T
+\end{align*}
+$$
+
+- $\beta$: coefficient of volume expansion (K$^{-1}$)
+  - $\beta = 3\alpha$
+
+</Column>
+</Row>
+
+## Heat
+
+<Row>
+<Column>
+
+### Heat capacity
+
+$$
+\begin{align*}
+Q
+&= mc\Delta T \\
+&= nC\Delta T \\
+\end{align*}
+$$
+
+- $c$ : specific heat capacity (J/kg $\cdot$ K)
+- $C = Mc$ : molar heat capacity (J/mol $\cdot$ K)
+  - $m = nM$
+
+</Column>
+<Column>
+
+### Latent heat
+
+$$
+\begin{align*}
+Q = mL
+\end{align*}
+$$
+
+- $L_f$: latent heat of fusion (J/kg)
+- $L_v$: latent heat of vaporization (J/kg)
+
+</Column>
+</Row>
+
+## Heat transfer
+
+<Row>
+<Column>
+
+### Conduction
+
+Through physical contact from hot to cold
+
+$$
+\begin{align*}
+H &= kA\frac{T_H-T_C}{L} \\
+H &= -kA\frac{dT}{dx} = \frac{dQ}{dT}
+\end{align*}
+$$
+
+- $k$: thermal conductivity (W/m $\cdot$ K)
+- $A$: cross-sectional area
+- $L$: length of the conductor
+- Thermal resistance $R = \frac{L}{k}$ (m$^2$/W $\cdot$ K)
+
+:::note[Example]
+
+To find the temperature of the junction between two different conductors:
+
+$$
+\begin{align*}
+k_1A_1\frac{T_H-T}{L_1} = k_2A_2\frac{T-T_C}{L_2}
+\end{align*}
+$$
+
+:::
+
+</Column>
+<Column>
+
+### Radiation
+
+Through electromagnetic wave which does not require a medium
+
+**Stephan-Boltzmann law**:
+
+$$
+\begin{align*}
+H_{rad} &= Ae\sigma T^4 \\
+H_{net} &= Ae\sigma(T^4-T_S^4)
+\end{align*}
+$$
+
+- *sigma* $\sigma = 5.67\times10^{-8}$ W/m$^2\cdot$ K$^4$ : **Stephan-Boltzmann constant**
+- $e$: emissivity ($0 \le e \le 1$)
+- $A$: total surface area
+- $T_S$: temperature of surroundings
+
+</Column>
+</Row>
+
+### Convection
+
+Through motion of fluid from one region to another
