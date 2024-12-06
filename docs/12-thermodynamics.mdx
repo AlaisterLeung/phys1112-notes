@@ -3,6 +3,8 @@ sidebar_position: 12
 slug: /12-thermodynamics
 ---
 
+import Row from '@site/src/components/Row';
+import Column from '@site/src/components/Column';
 import Table from '@site/src/components/Table';
 import Th from '@site/src/components/12/Th';
 import Td from '@site/src/components/12/Td';
@@ -14,7 +16,7 @@ import Td from '@site/src/components/12/Td';
 
 Number of moles $n = \frac{m}{M} = \frac{N}{N_A}$
 - $M$: molar mass (kg/mol), mass of 1 mole of the substance
-- $N$: number of particles/molecules
+- $N$: number of molecules
 - $N_A = 6.02\times10^{23}$ mol$^{-1}$ : **Avogadro constant**
 
 Pressure $= \frac{\text{Force}}{\text{Area}}$
@@ -27,32 +29,34 @@ Litter to cubic meter: $1$L = $1\times10^{-3}$ m$^3$
 
 ## Summary
 
+**First law of thermodynamics**: $\Delta U = Q_{in} - W_{by}$
+
 <Table>
 <thead>
 <tr>
     <Th></Th>
     <Th>Change in internal energy</Th>
-    <Th>Heat transfer</Th>
+    <Th>Heat</Th>
     <Th>Work done</Th>
 </tr>
 </thead>
 <tbody>
 <tr>
     <Td></Td>
-    <Td>$\Delta U = \frac{f}{2}nRT$</Td>
+    <Td>$U = \frac{f}{2}nRT$</Td>
     <Td>$Q_{in} = nC\Delta T$</Td>
-    <Td>$W_{by} = p\Delta V$</Td>
+    <Td>$W_{by} = \int_{V_1}^{V_2} pdV$</Td>
 </tr>
 <tr>
     <Td>**Isothermal** ($\Delta T = 0$)</Td>
     <Td>$\Delta U = 0$</Td>
     <Td>$Q_{in} = W_{by}$</Td>
-    <Td>$W_{by} = nRT\ln\left(\frac{V_1}{V_0}\right)$</Td>
+    <Td>$W_{by} = nRT\ln\left(\frac{V_2}{V_1}\right)$</Td>
 </tr>
 <tr>
     <Td>**Isochoric** ($\Delta V = 0$)</Td>
     <Td>$\Delta U = Q_{in} = \frac{f}{2}nR\Delta T$</Td>
-    <Td>$Q_{in} = nC_v\Delta T$</Td>
+    <Td>$Q_{in} = nC_V\Delta T$</Td>
     <Td>$W_{by} = 0$</Td>
 </tr>
 <tr>
@@ -65,7 +69,7 @@ Litter to cubic meter: $1$L = $1\times10^{-3}$ m$^3$
     <Td>**Adiabatic** ($Q_{in} = 0$)</Td>
     <Td>$\Delta U = -W_{by}$</Td>
     <Td>$Q_{in} = 0$</Td>
-    <Td>$W_{by} = \frac{1}{\gamma-1}(p_0V_0 - p_1V_1)$</Td>
+    <Td>$W_{by} = \frac{1}{\gamma-1}(p_1V_1 - p_2V_2)$</Td>
 </tr>
 </tbody>
 </Table>
@@ -81,31 +85,128 @@ $$
 - $R = 8.314$ J/mol$\cdot$K : **universal gas constant**
 - $k = 1.381\times10^{-23}$ J/K : **Boltzmann constant**
 
-## KE of ideal gas
+## First law of thermodynamics
 
-Total translational KE:
+<Row>
+<Column>
 
-$$
-K_{tr} = \frac{3}{2}nRT = \frac{3}{2}NkT
-$$
-
-Root-mean-square speed:
-
-$$
-v_{rms} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3kT}{m}}
-$$
-
-## Internal energy of gas system
-
-:::warning[work in progress...]
-
-Update coming soon!
-
-:::
-
-**First law of thermodynamics**:
 $$
 \Delta U = Q_{in} - W_{by}
 $$
 
-TODO: add a p-V diagram
+<br />
+
+- $\Delta U$: change in internal energy
+- path-independent
+- For a cyclic process, $\Delta U = 0$
+
+<br />
+
+- $Q_{in}$: heat enters into system from surroundings
+- path-dependent
+
+<br />
+
+- $W_{by}$: work done by the system
+- = **Area under p-V curve**
+- path-dependent
+- **Expansion**: $W_{by} > 0$
+- **Compression**: $W_{by} < 0$
+
+</Column>
+<Column>
+
+<img src="/img/figures/p-v-diagram.png" alt="p-V diagram" width="300" />
+<img src="/img/figures/cyclic-process.png" alt="Cyclic process" width="300" />
+
+Example cyclic process with $W_{net} < 0$
+
+</Column>
+</Row>
+
+## KE of ideal gas
+
+<Row>
+<Column>
+
+**Total translational KE** of all molecules:
+$$
+K_{tot} = \frac{3}{2}nRT = \frac{3}{2}NkT
+$$
+
+**Root-mean-square speed** of molecules:
+$$
+v_{rms} = \sqrt{\frac{3RT}{M}} = \sqrt{\frac{3kT}{m}}
+$$
+
+</Column>
+<Column>
+
+**Most probable speed** of molecules:
+$$
+v_{mp} = \sqrt{\frac{2RT}{M}} = \sqrt{\frac{2kT}{m}}
+$$
+
+**Average speed** of molecules:
+$$
+v_{av} = \sqrt{\frac{8RT}{\pi M}} = \sqrt{\frac{8kT}{\pi m}}
+$$
+
+</Column>
+</Row>
+
+## Molar heat capacity of ideal gas
+
+<Row>
+<Column>
+
+At **constant volume**:
+$$
+C_V = \frac{f}{2}R
+$$
+
+At **constant pressure**:
+$$
+C_p = \frac{f+2}{2}R
+$$
+
+**Adiabatic index**:
+$$
+\gamma = \frac{C_p}{C_V} = \frac{f+2}{f}
+$$
+
+</Column>
+<Column>
+
+### Degrees of freedom $f$
+
+**Monoatomic gas**:
+- $f = 3$ and $\gamma = \frac{5}{3}$
+- Translation only
+
+**Diatomic gas**:
+- $f = 5$ and $\gamma = \frac{7}{5}$
+- Translation + rotation
+- At very high temperature:
+  - $f = 7$ and $\gamma = \frac{9}{7}$
+  - Translation + rotation + vibration
+
+</Column>
+</Row>
+
+## Adiabatic process
+
+- $Q = 0$ : no heat enters into or exits from the system
+- e.g. free expansion of gas
+
+$$
+\begin{align*}
+pV^\gamma &= \text{constant} \\
+TV^{\gamma-1} &= \text{constant} \\
+W_{by} &= \frac{1}{\gamma-1}(p_1V_1 - p_2V_2)
+\end{align*}
+$$
+
+## Second law of thermodynamics
+
+TODO
