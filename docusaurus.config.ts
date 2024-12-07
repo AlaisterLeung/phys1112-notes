@@ -104,7 +104,37 @@ const config: Config = {
         colorMode: {
             defaultMode: "dark",
         },
+
+        metadata: [
+            {
+                name: "keywords",
+                content:
+                    "phys1112, phy, phys, physics, 1112, notes, hkust, ust",
+            },
+        ],
     } satisfies Preset.ThemeConfig,
+
+    headTags: [
+        {
+            tagName: "script",
+            attributes: {
+                type: "application/ld+json",
+            },
+            innerHTML: JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "WebSite",
+                name: "PHYS1112 Notes by ljnux",
+                alternateName: [
+                    "ljnux",
+                    "ljnux.com",
+                    "PHYS1112",
+                    "PHYS1112 Notes",
+                ],
+                url: "https://phys1112-notes.ljnux.com/",
+                logo: "https://phys1112-notes.ljnux.com/img/ljnux-logo-icon.svg",
+            }),
+        },
+    ],
 };
 
 export default config;
