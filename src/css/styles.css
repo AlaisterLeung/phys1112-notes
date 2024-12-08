@@ -54,3 +54,15 @@ td {
     max-width: 250px;
     min-width: 180px;
 }
+
+.sponsor-button-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-button-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

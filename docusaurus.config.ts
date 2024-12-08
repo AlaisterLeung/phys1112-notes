@@ -78,8 +78,13 @@ const config: Config = {
             },
             items: [
                 {
-                    href: "https://github.com/alaisterleung/phys1112-notes",
+                    href: "https://github.com/AlaisterLeung/phys1112-notes",
                     label: "GitHub",
+                    position: "right",
+                },
+                {
+                    type: "html",
+                    value: '<a class="sponsor-button-link" href="https://github.com/sponsors/AlaisterLeung" target="_blank" rel="noopener noreferrer"><img class="sponsor-button-img" src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86" /></a>',
                     position: "right",
                 },
             ],
