@@ -73,7 +73,7 @@ const config: Config = {
         navbar: {
             title: "PHYS1112 Notes",
             logo: {
-                alt: "ljnux.com Logo",
+                alt: "LJNUX Logo",
                 src: "img/ljnux-logo-icon.svg",
             },
             items: [
@@ -97,7 +97,7 @@ const config: Config = {
         },
         footer: {
             style: "dark",
-            copyright: `Copyright © ${new Date().getFullYear()} ljnux. Built with Docusaurus.`,
+            copyright: `Copyright © ${new Date().getFullYear()} LJNUX. Built with Docusaurus.`,
         },
         tableOfContents: {
             maxHeadingLevel: 4,
@@ -128,15 +128,15 @@ const config: Config = {
             innerHTML: JSON.stringify({
                 "@context": "https://schema.org/",
                 "@type": "WebSite",
-                name: "PHYS1112 Notes by ljnux",
+                name: "PHYS1112 Notes by LJNUX",
                 alternateName: [
-                    "ljnux",
-                    "ljnux.com",
+                    "LJNUX",
                     "PHYS1112",
+                    "PHYS 1112",
                     "PHYS1112 Notes",
+                    "PHYS 1112 Notes",
                 ],
                 url: "https://phys1112-notes.ljnux.com/",
-                logo: "https://phys1112-notes.ljnux.com/img/ljnux-logo-icon.svg",
             }),
         },
     ],
